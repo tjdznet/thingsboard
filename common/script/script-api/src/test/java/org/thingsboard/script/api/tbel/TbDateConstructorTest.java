@@ -78,7 +78,7 @@ public class TbDateConstructorTest {
                 "var d = new Date(\"02:15:30 PM, Sun 10/09/2022\", pattern, \"en-US\", \"America/New_York\");" +
                 "d.toISOString()";
         res = executeScript(body);
-        Assertions.assertNotEquals("22022-10-09T18:15:30Z".length(),  res);
+        Assertions.assertNotEquals("2022-10-09T18:15:30Z".length(),  res);
     }
 
     @Test

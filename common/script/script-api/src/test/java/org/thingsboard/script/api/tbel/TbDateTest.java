@@ -156,7 +156,8 @@ class TbDateTest {
         // tz = local
         int localOffsetHrs = ZoneId.systemDefault().getRules().getOffset(d.getInstant()).getTotalSeconds()/60/60;
         int hrs = 14 - localOffsetHrs;
-        String expected = "2022-10-09T" + hrs + ":15:30Z";
+        String formattedHrs = String.format("%02d", hrs);
+        String expected = "2022-10-09T" + formattedHrs + ":15:30Z";
         Assertions.assertEquals(expected, d.toISOString());
 
         // tz = "-04:00"
@@ -186,7 +187,8 @@ class TbDateTest {
         d = new TbDate(s, pattern, "uk-UA");
         localOffsetHrs = ZoneId.systemDefault().getRules().getOffset(d.getInstant()).getTotalSeconds()/60/60;
         hrs = 14 - localOffsetHrs;
-        expected = "2023-10-04T" + hrs + ":15:30Z";
+        formattedHrs = String.format("%02d", hrs);
+        expected = "2023-10-04T" + formattedHrs + ":15:30Z";
         Assertions.assertEquals(expected, d.toISOString());
 
         d = new TbDate(1693962245000L);
