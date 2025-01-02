@@ -146,6 +146,9 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
+<!--                <configuration>-->
+<!--                    <repository>crpi-c5rruaqsgvkzwb3u.cn-beijing.personal.cr.aliyuncs.com/library/ubuntu:latest</repository>-->
+<!--                </configuration>-->
                 <executions>
                     <execution>
                         <id>build-docker-tb-postgres-image</id>
@@ -218,6 +221,9 @@
                     <plugin>
                         <groupId>com.spotify</groupId>
                         <artifactId>dockerfile-maven-plugin</artifactId>
+<!--                        <configuration>-->
+<!--                            <repository>crpi-c5rruaqsgvkzwb3u.cn-beijing.personal.cr.aliyuncs.com/library/ubuntu:latest</repository>-->
+<!--                        </configuration>-->
                         <executions>
                             <execution>
                                 <id>push-latest-docker-tb-postgres-image</id>

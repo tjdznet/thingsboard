@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-FROM thingsboard/openjdk17:bookworm-slim
+#FROM thingsboard/openjdk17:bookworm-slim
+FROM crpi-c5rruaqsgvkzwb3u.cn-beijing.personal.cr.aliyuncs.com/thingsboards/openjdk17:bookworm-slim
 
 COPY start-tb-lwm2m-transport.sh ${pkg.name}.deb /tmp/
 
